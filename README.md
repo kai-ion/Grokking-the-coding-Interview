@@ -12,7 +12,7 @@ Here are a couple of other courses for design interviews:
 
 [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview?aff=VOY6)
 
-Grokking the Advanced System Design Interview
+[Grokking the Advanced System Design Interview](https://www.educative.io/courses/grokking-adv-system-design-intvw?aff=VOY6)
 
-Grokking the Object Oriented Design Interview
+[Grokking the Object Oriented Design Interview](https://www.educative.io/courses/grokking-the-object-oriented-design-interview?aff=VOY6)
 
