@@ -5,8 +5,8 @@ https://www.educative.io/courses/grokking-the-coding-interview/
 - [ ] add PNG file for Sliding window problems
 - [ ] create a linked list with a cycles functions
 
-Other courses#
-If you are looking for a similar pattern-based approach to solve Dynamic Programming problems, take a look at Grokking Dynamic Programming Patterns for Coding Interviews.
+# Other courses
+If you are looking for a similar pattern-based approach to solve Dynamic Programming problems, take a look at [Grokking Dynamic Programming Patterns for Coding Interviews.](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews?aff=VOY6)
 
 Here are a couple of other courses for design interviews:
 
