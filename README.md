@@ -10,7 +10,9 @@ If you are looking for a similar pattern-based approach to solve Dynamic Program
 
 Here are a couple of other courses for design interviews:
 
-Grokking the System Design Interview
+Grokking the System Design Interview [https://www.educative.io/courses/grokking-the-system-design-interview?aff=VOY6]
+
 Grokking the Advanced System Design Interview
+
 Grokking the Object Oriented Design Interview
 
