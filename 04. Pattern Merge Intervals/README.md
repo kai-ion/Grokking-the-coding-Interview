@@ -3,5 +3,6 @@ This pattern describes an efficient technique to deal with overlapping intervals
 
 Given two intervals (‘a’ and ‘b’), there will be six different ways the two intervals can relate to each other:
 
-svg viewer
+![alt text](https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/04.%20Pattern%20Merge%20Intervals/Introduction.png "Introduction")
+
 Understanding the above six cases will help us in solving all intervals related problems. Let’s jump onto our first problem to understand the Merge Interval pattern.
