@@ -10,11 +10,40 @@ class Interval {
   }
 };
 
-class MergeIntervals {
+class IfOverLap {
 
   public static List<Interval> merge(List<Interval> intervals) {
     List<Interval> mergedIntervals = new LinkedList<Interval>();
     // TODO: Write your code here
+    int n = intervals.size();
+    if (n < 2) {
+      return intervals;
+    }
+
+    Collections.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
+
+    Iterator<Interval> itr = intervals.iterator();
+    Interval interval = itr.next();
+    int start = interval.start;
+    int end = interval.end;
+
+    while (itr.hasNext()) {
+      interval = itr.next();
+
+      if (interval.start < end) {
+        end = Math.max(interval.end, end);
+      }
+
+      else {
+        mergedIntervals.add(new Interval(start, end));
+
+        start = interval.start;
+        end = interval.end;
+      }
+    }
+
+    mergedIntervals.add(new Interval(start, end));
+
     return mergedIntervals;
   }
 
