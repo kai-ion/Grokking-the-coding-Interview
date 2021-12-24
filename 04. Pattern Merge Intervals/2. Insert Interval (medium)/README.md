@@ -51,4 +51,8 @@ Time complexity #
 As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N), where ‘N’ is the total number of intervals.
 
 Space complexity #
+<<<<<<< HEAD
 The space complexity of the above algorithm will be O(N) as we need to return a list containing all the merged intervals.
+=======
+The space complexity of the above algorithm will be O(N)O(N) as we need to return a list containing all the merged intervals.
+>>>>>>> 9572c78f5d4a7a45f7168e8e3d0cd9177348a576
