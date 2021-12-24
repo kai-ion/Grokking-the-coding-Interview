@@ -36,15 +36,19 @@ The diagram above clearly shows the merging approach. To handle all four merging
 ```
 Our overall algorithm will look like this:
 
-Skip all intervals which end before the start of the new interval, i.e., skip all intervals with the following condition:
+1. Skip all intervals which end before the start of the new interval, i.e., skip all intervals with the following condition:
+    ```
     intervals[i].end < newInterval.start
-Let’s call the last interval ‘b’ that does not satisfy the above condition. If ‘b’ overlaps with the new interval (a) (i.e. b.start <= a.end), we need to merge them into a new interval ‘c’:
+    ```
+2. Let’s call the last interval ‘b’ that does not satisfy the above condition. If ‘b’ overlaps with the new interval (a) (i.e. b.start <= a.end), we need to merge them into a new interval ‘c’:
+```
     c.start = min(a.start, b.start)
     c.end = max(a.end, b.end)
-We will repeat the above two steps to merge ‘c’ with the next overlapping interval.
+    ```
+3. We will repeat the above two steps to merge ‘c’ with the next overlapping interval.
 
 Time complexity #
-As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N)O(N), where ‘N’ is the total number of intervals.
+As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N), where ‘N’ is the total number of intervals.
 
 Space complexity #
-The space complexity of the above algorithm will be O(N)O(N) as we need to return a list containing all the merged intervals.
+The space complexity of the above algorithm will be O(N) as we need to return a list containing all the merged intervals.

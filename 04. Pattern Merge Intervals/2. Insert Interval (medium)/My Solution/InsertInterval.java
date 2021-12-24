@@ -13,35 +13,40 @@ class Interval {
 class InsertInterval {
 
   public static List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-    if (intervals == null || intervals.isEmpty())
-      return Arrays.asList(newInterval);
-
     List<Interval> mergedIntervals = new ArrayList<>();
+    //TODO: Write your code here
 
-    int i = 0;
-    // skip (and add to output) all intervals that come before the 'newInterval'
-    while (i < intervals.size() && intervals.get(i).end < newInterval.start)
-      mergedIntervals.add(intervals.get(i++));
+    int start = newInterval.start;
+    int end = newInterval.end;
 
-    // merge all intervals that overlap with 'newInterval'
-    while (i < intervals.size() && intervals.get(i).start <= newInterval.end) {
-      newInterval.start = Math.min(intervals.get(i).start, newInterval.start);
-      newInterval.end = Math.max(intervals.get(i).end, newInterval.end);
+    int i = 0, n = intervals.size();
+
+    while (i < n && intervals.get(i).end < newInterval.start) {
+      mergedIntervals.add(intervals.get(i));
       i++;
     }
 
-    // insert the newInterval
-    mergedIntervals.add(newInterval);
+    while (i < n && intervals.get(i).start <= newInterval.end) {
+      start = Math.min(intervals.get(i).start, start);
+      end = Math.max(intervals.get(i).end, end);
+      i++;
 
-    // add all the remaining intervals to the output
-    while (i < intervals.size())
-      mergedIntervals.add(intervals.get(i++));
+    } 
+
+    mergedIntervals.add(new Interval(start, end));
+
+    while (i < n) {
+      mergedIntervals.add(intervals.get(i));
+      i++;
+    }
+
+ 
 
     return mergedIntervals;
   }
 
   public static void main(String[] args) {
-    List<Interval> input = new ArrayList<Interval>();
+      List<Interval> input = new ArrayList<Interval>();
     input.add(new Interval(1, 3));
     input.add(new Interval(5, 7));
     input.add(new Interval(8, 12));
