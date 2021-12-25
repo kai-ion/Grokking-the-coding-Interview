@@ -3,7 +3,7 @@ https://www.educative.io/courses/grokking-the-coding-interview/
 
 # To Do List
 - [ ] create a linked list with a cycles functions
-- [ ] Pattern 4, 1. Merge Intervals. Add a find if overlap solution
+- [ ] Pattern 4, 4. Conflicting Appointments (medium). Similar problem, find all conflicting appointments
 
 # Other courses
 If you are looking for a similar pattern-based approach to solve Dynamic Programming problems, take a look at [Grokking Dynamic Programming Patterns for Coding Interviews.](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews?aff=VOY6)
