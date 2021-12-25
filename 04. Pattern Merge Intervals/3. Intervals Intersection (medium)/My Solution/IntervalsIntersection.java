@@ -24,7 +24,7 @@ public class IntervalsIntersection {
 
     while (i < n && j < m) {
       
-      if ( (arr1[i].start >= arr2[j].start && arr1[i].end <= arr2[j].start) 
+      if ( (arr1[i].start >= arr2[j].start && arr1[i].start <= arr2[j].end) 
         || (arr1[i].start <= arr2[j].start && arr1[i].end >= arr2[j].start) ) {
           start = Math.max(arr1[i].start, arr2[j].start);
           end = Math.min(arr1[i].end, arr2[j].end);
