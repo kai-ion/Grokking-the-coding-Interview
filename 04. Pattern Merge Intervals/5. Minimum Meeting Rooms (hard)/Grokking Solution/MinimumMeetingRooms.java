@@ -10,11 +10,29 @@ class Meeting {
   }
 };
 
-class MinimumMeetingRooms {
+public class MinimumMeetingRooms {
 
   public static int findMinimumMeetingRooms(List<Meeting> meetings) {
-    // TODO: Write your code here    
-    return -1;
+    if (meetings == null || meetings.size() == 0)
+      return 0;
+
+    // sort the meetings by start time
+    Collections.sort(meetings, (a, b) -> Integer.compare(a.start, b.start));
+
+    int minRooms = 0;
+    PriorityQueue<Meeting> minHeap = 
+        new PriorityQueue<>(meetings.size(), (a, b) -> Integer.compare(a.end, b.end));
+
+    for (Meeting meeting : meetings) {
+      // remove all meetings that have ended
+      while (!minHeap.isEmpty() && meeting.start >= minHeap.peek().end)
+        minHeap.poll();
+      // add the current meeting into the minHeap
+      minHeap.offer(meeting);
+      // all active meeting are in the minHeap, so we need rooms for all of them.
+      minRooms = Math.max(minRooms, minHeap.size());
+    }
+    return minRooms;
   }
 
   public static void main(String[] args) {
