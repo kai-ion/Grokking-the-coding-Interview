@@ -4,9 +4,10 @@ https://www.educative.io/courses/grokking-the-coding-interview/
 # To Do List
 - [ ] create a linked list with a cycles functions
 - [ ] Pattern 4, 4. Conflicting Appointments (medium). Similar problem, find all conflicting appointments
-- [ ] Pattern 5, 5. Minimum Meeting Rooms, Similar Problems: 
+- [ ] Pattern 4, 5. Minimum Meeting Rooms, Similar Problems: 
   - Problem 1: Given a list of intervals, find the point where the maximum number of intervals overlap.
   - Problem 2: Given a list of intervals representing the arrival and departure times of trains to a train station, our goal is to find the minimum number of platforms required for the train station so that no train has to wait.
+- [ ] Pattern 4, 7. Employee Free Time
 
 # Other courses
 If you are looking for a similar pattern-based approach to solve Dynamic Programming problems, take a look at [Grokking Dynamic Programming Patterns for Coding Interviews.](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews?aff=VOY6)
