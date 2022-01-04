@@ -16,7 +16,31 @@ class MaximumCPULoad {
 
   public static int findMaxCPULoad(List<Job> jobs) {
     // TODO: Write your code here
-    return -1;
+    int len = jobs.size();
+    int cpuUse = 0;
+    int maxCpu = 0;
+
+    if (jobs == null || len == 0 ) {
+      return 0;
+    }
+
+    Collections.sort(jobs, (a, b) -> Integer.compare(a.start, b.start));
+
+    PriorityQueue<List<Job>> minHeap = new PriorityQueue<>
+        (len, (a, b) -> Integer.compare(a.end, b.end));
+
+    for (Job job : jobs) {
+      while (minHeap != null && job.start >= minHeap.peak().end) {
+        cpuUse -= minHeap.peak().cpuLoad;
+      }
+
+      minHeap.offer(job);
+      cpuUse += job.cpuLoad;
+
+      maxCpu = Math.max(cpuUse, maxCpu);
+    }
+    
+    return maxCpu;
   }
 
   public static void main(String[] args) {

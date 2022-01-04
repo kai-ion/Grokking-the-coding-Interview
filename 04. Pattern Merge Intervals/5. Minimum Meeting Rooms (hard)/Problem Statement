@@ -68,7 +68,7 @@ Time complexity#
 The time complexity of the above algorithm is O(N*logN), where ‘N’ is the total number of meetings. This is due to the sorting that we did in the beginning. Also, while iterating the meetings we might need to poll/offer meeting to the priority queue. Each of these operations can take O(logN). Overall our algorithm will take O(NlogN)O(NlogN).
 
 Space complexity#
-The space complexity of the above algorithm will be O(N) which is required for sorting. Also, in the worst case scenario, we’ll have to insert all the meetings into the Min Heap (when all meetings overlap) which will also take O(N)O(N) space. The overall space complexity of our algorithm is O(N).
+The space complexity of the above algorithm will be O(N) which is required for sorting. Also, in the worst case scenario, we’ll have to insert all the meetings into the Min Heap (when all meetings overlap) which will also take O(N) space. The overall space complexity of our algorithm is O(N).
 
 Similar Problems#
 Problem 1: Given a list of intervals, find the point where the maximum number of intervals overlap.
