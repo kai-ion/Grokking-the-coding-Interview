@@ -13,6 +13,37 @@ class ReverseEveryKElements {
 
   public static ListNode reverse(ListNode head, int k) {
     // TODO: Write your code here
+    ListNode prev = null;
+    ListNode next;
+    ListNode curr = head;
+    ListNode sublistEndNode;
+    ListNode firsthalfEndNode;
+
+
+    
+    while (curr != null) {
+      firsthalfEndNode = prev;
+      sublistEndNode = curr;
+  
+      for (int i = 0; i < k && curr != null; i++) {
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+      }
+  
+      if (firsthalfEndNode != null) {
+        firsthalfEndNode.next = prev;
+      }
+      else {
+        head = prev;
+      }
+  
+      sublistEndNode.next = curr;
+
+      prev = sublistEndNode;
+    }
+    
     return head;
   }
 

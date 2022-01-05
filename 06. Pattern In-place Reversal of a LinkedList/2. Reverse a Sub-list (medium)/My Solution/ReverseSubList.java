@@ -29,6 +29,7 @@ class ReverseSubList {
       curr = curr.next;
     }
 
+
     frontendNode = prev;
     subListendNode = curr;
 
@@ -48,7 +49,7 @@ class ReverseSubList {
 
     subListendNode.next = curr;
 
-    return head;
+    return prev;
   }
 
   public static void main(String[] args) {
