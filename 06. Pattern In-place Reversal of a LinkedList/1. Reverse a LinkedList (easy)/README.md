@@ -2,6 +2,7 @@
 Given the head of a Singly LinkedList, reverse the LinkedList. 
 Write a function to return the new head of the reversed LinkedList.
 
+Example:
 [alt text](https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/06.%20Pattern%20In-place%20Reversal%20of%20a%20LinkedList/1.%20Reverse%20a%20LinkedList%20(easy)/Reverse%20a%20LinkedList%20(easy).PNG "Problem Statement")
 
 # Solution 
