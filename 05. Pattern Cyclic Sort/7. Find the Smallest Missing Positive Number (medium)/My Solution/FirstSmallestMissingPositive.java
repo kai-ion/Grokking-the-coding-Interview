@@ -7,7 +7,7 @@ class FirstSmallestMissingPositive {
 
     while (i < len) {
       int j = nums[i] - 1;
-      if (nums[i] > 0 && nums[i] < len && nums[i] != nums[j]) {
+      if (nums[i] > 0 && nums[i] <= len && nums[i] != nums[j]) {
         swap(nums, i, j);
       }
       else {
