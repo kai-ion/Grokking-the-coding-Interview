@@ -1,6 +1,10 @@
 # Problem Statement
 Given the head of a LinkedList and two positions ‘p’ and ‘q’, reverse the LinkedList from position ‘p’ to ‘q’.
 
+![alt text][logo]
+
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/06.%20Pattern%20In-place%20Reversal%20of%20a%20LinkedList/2.%20Reverse%20a%20Sub-list%20(medium)/Reverse%20a%20Sub-list%20(medium).PNG "Example"
+
 # Solution
 The problem follows the In-place Reversal of a LinkedList pattern. We can use a similar approach as discussed in Reverse a LinkedList. Here are the steps we need to follow:
 
