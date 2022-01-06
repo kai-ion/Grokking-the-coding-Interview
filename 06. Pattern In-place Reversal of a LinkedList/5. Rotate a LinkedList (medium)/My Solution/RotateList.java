@@ -13,6 +13,31 @@ class RotateList {
 
   public static ListNode rotate(ListNode head, int rotations) {
     // TODO: Write your code here
+
+    ListNode lastNode = head;
+    ListNode rotatedLastNode = head;
+
+    int len = 1;
+    int skipLen = 0;
+    
+
+    while (lastNode.next != null) {
+      lastNode = lastNode.next;
+      len++;
+    }
+
+    rotations %= len;
+
+    lastNode.next = head;
+
+    for (int i = 0; i < rotations - 1; i++) {
+      rotatedLastNode = rotatedLastNode.next;
+    }
+    
+    head = rotatedLastNode.next;
+    rotatedLastNode.next = null;
+    
+
     return head;
   }
 
