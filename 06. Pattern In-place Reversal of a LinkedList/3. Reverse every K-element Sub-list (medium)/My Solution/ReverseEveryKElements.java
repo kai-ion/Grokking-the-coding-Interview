@@ -13,6 +13,11 @@ class ReverseEveryKElements {
 
   public static ListNode reverse(ListNode head, int k) {
     // TODO: Write your code here
+    if (k <= 1 || head == null) {
+      return head;
+    }
+
+
     ListNode prev = null;
     ListNode next;
     ListNode curr = head;
