@@ -3,7 +3,7 @@ Given a binary tree and a node, find the level order successor of the given node
 
 ![alt text][logo]
 
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/5.%20Minimum%20Depth%20of%20a%20Binary%20Tree%20(easy)/Example.PNG "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/6.%20Level%20Order%20Successor%20(easy)/Example.PNG "example"
 
 
 # Solution
