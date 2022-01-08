@@ -16,4 +16,6 @@ Problem 1: Find the largest value on each level of a binary tree.
 
 Solution: We will follow a similar approach, but instead of having a running sum we will track the maximum value of each level.
 
+```
 maxValue = max(maxValue, currentNode.val)
+```
