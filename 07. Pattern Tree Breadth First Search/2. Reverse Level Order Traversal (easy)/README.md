@@ -1,6 +1,10 @@
 # Problem Statement
 Given a binary tree, populate an array to represent its level-by-level traversal in reverse order, i.e., the lowest level comes first. You should populate the values of all nodes in each level from left to right in separate sub-arrays.
 
+![alt text][logo]
+
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/2.%20Reverse%20Level%20Order%20Traversal%20(easy)/Example.PNG "example"
+
 # Solution
 This problem follows the Binary Tree Level Order Traversal pattern. We can follow the same BFS approach. The only difference will be that instead of appending the current level at the end, we will append the current level at the beginning of the result list.
 
