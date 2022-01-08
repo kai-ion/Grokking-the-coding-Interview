@@ -1,6 +1,11 @@
 # Problem Statement
 Given a binary tree, populate an array to represent the averages of all of its levels.
 
+![alt text][logo]
+
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/4.%20Level%20Averages%20in%20a%20Binary%20Tree%20(easy)/Example.PNG "example"
+
+
 # Solution
 This problem follows the Binary Tree Level Order Traversal pattern. We can follow the same BFS approach. The only difference will be that instead of keeping track of all nodes of a level, we will only track the running sum of the values of all nodes in each level. 
 In the end, we will append the average of the current level to the result array.
@@ -16,6 +21,10 @@ Problem 1: Find the largest value on each level of a binary tree.
 
 Solution: We will follow a similar approach, but instead of having a running sum we will track the maximum value of each level.
 
+<<<<<<< HEAD
 ```
 maxValue = max(maxValue, currentNode.val)
 ```
+=======
+maxValue = max(maxValue, currentNode.val)
+>>>>>>> a2644fae8b61dca3b60b04624b049aa3ccff0371
