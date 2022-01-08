@@ -10,7 +10,7 @@ class TreeNode {
   }
 };
 
-class MinimumBinaryTreeDepth {
+class MaximumBinaryTreeDepth {
   public static int findDepth(TreeNode root) {
     // TODO: Write your code here
 
@@ -24,9 +24,8 @@ class MinimumBinaryTreeDepth {
 
     queue.offer(root);
 
-    boolean minFound = false;
 
-    while (!minFound) {
+    while (!queue.isEmpty()) {
 
       int levelSize = queue.size();
       level++;
@@ -34,9 +33,6 @@ class MinimumBinaryTreeDepth {
       for (int i = 0; i < levelSize; i++) {
         TreeNode currentNode = queue.poll();
 
-        if (currentNode.left == null && currentNode.right == null) {
-          minFound = true;
-        }
 
         if (currentNode.left != null) {
           queue.offer(currentNode.left);
@@ -61,9 +57,9 @@ class MinimumBinaryTreeDepth {
     root.right = new TreeNode(1);
     root.right.left = new TreeNode(10);
     root.right.right = new TreeNode(5);
-    System.out.println("Tree Minimum Depth: " + MinimumBinaryTreeDepth.findDepth(root));
+    System.out.println("Tree Maximum Depth: " + MaximumBinaryTreeDepth.findDepth(root));
     root.left.left = new TreeNode(9);
     root.right.left.left = new TreeNode(11);
-    System.out.println("Tree Minimum Depth: " + MinimumBinaryTreeDepth.findDepth(root));
+    System.out.println("Tree Maximum Depth: " + MaximumBinaryTreeDepth.findDepth(root));
   }
 }

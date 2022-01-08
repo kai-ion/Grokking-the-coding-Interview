@@ -2,10 +2,15 @@
 Find the minimum depth of a binary tree. 
 The minimum depth is the number of nodes along the shortest path from the root node to the nearest leaf node.
 
+
+![alt text][logo]
+
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/5.%20Minimum%20Depth%20of%20a%20Binary%20Tree%20(easy)/Example.PNG "example"
+
 # Solution
 This problem follows the Binary Tree Level Order Traversal pattern. We can follow the same BFS approach. The only difference will be, instead of keeping track of all the nodes in a level, we will only track the depth of the tree. As soon as we find our first leaf node, that level will represent the minimum depth of the tree.
 
-# Time complexity#
+# Time complexity
 The time complexity of the above algorithm is O(N), where ‘N’ is the total number of nodes in the tree. This is due to the fact that we traverse each node once.
 
 # Space complexity
