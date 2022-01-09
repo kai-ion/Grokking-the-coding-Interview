@@ -4,7 +4,7 @@ Given a binary tree, return an array containing nodes in its right view. The rig
 
 ![alt text][logo]
 
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/7.%20Connect%20Level%20Order%20Siblings%20(medium)/Example.PNG "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/9.%20Right%20View%20of%20a%20Binary%20Tree%20(easy)/Example.PNG "example"
 
 # Solution
 This problem follows the Binary Tree Level Order Traversal pattern. We can follow the same BFS approach. The only additional thing we will be doing is to append the last node of each level to the result array.
