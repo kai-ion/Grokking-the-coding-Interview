@@ -19,5 +19,6 @@ The space complexity of the above algorithm will be O(N) which is required for t
 # Similar Problems
 Problem 1: Given a binary tree, find its maximum depth (or height).
 
-# Solution: We will follow a similar approach. Instead of returning as soon as we find a leaf node, we will keep traversing for all the levels, incrementing maximumDepth each time we complete a level. 
+# Solution: 
+We will follow a similar approach. Instead of returning as soon as we find a leaf node, we will keep traversing for all the levels, incrementing maximumDepth each time we complete a level. 
 

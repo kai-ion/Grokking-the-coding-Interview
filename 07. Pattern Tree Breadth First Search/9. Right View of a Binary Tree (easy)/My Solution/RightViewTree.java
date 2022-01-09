@@ -14,6 +14,36 @@ class RightViewTree {
   public static List<TreeNode> traverse(TreeNode root) {
     List<TreeNode> result = new ArrayList<>();
     // TODO: Write your code here
+    if (root == null) {
+      return result;
+    }
+
+    Queue<TreeNode> queue = new LinkedList<>();
+
+    queue.offer(root);
+
+    while(!queue.isEmpty()) {
+
+      int levelSize = queue.size();
+
+      for (int i = 0; i < levelSize; i++) {
+        TreeNode currentNode = queue.poll();
+        
+        if (currentNode.left != null) {
+          queue.offer(currentNode.left);
+        }
+
+        if (currentNode.right != null) {
+          queue.offer(currentNode.right);
+        }
+
+        if (i == levelSize - 1) {
+          result.add(currentNode);
+        }
+      }
+
+    }
+
     return result;
   }
 
