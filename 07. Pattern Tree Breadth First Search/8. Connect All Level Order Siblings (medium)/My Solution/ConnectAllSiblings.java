@@ -15,6 +15,29 @@ class TreeNode {
 class ConnectAllSiblings {
   public static void connect(TreeNode root) {
     // TODO: Write your code here
+
+    Queue<TreeNode> queue = new LinkedList<>();
+
+    queue.offer(root);
+
+    while (!queue.isEmpty()) {
+      int levelSize = queue.size();
+
+      for (int i = 0; i < levelSize; i++) {
+        TreeNode currentNode = queue.poll();
+
+        if (currentNode.left != null) {
+          queue.offer(currentNode.left);
+        }
+
+        if (currentNode.right != null) {
+          queue.offer(currentNode.right);
+        }
+
+        currentNode.next = queue.peek();
+      }
+    }
+
   }
 
   public static void main(String[] args) {
