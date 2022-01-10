@@ -27,11 +27,15 @@ From the above discussion, we can conclude that our algorithm’s overall space 
 
 Also, from the above discussion, since for each leaf node, in the worst case, we have to copy log(N) nodes to store its path; therefore, the time complexity of our algorithm will also be O(N*logN).
 
-Similar Problems#
-Problem 1: Given a binary tree, return all root-to-leaf paths.
+# Similar Problems
+### Problem 1: 
+Given a binary tree, return all root-to-leaf paths.
 
-Solution: We can follow a similar approach. We just need to remove the “check for the path sum.”
+### Solution: 
+We can follow a similar approach. We just need to remove the “check for the path sum.”
 
-Problem 2: Given a binary tree, find the root-to-leaf path with the maximum sum.
+### Problem 2: 
+Given a binary tree, find the root-to-leaf path with the maximum sum.
 
-Solution: We need to find the path with the maximum sum. As we traverse all paths, we can keep track of the path with the maximum sum.
+### Solution: 
+We need to find the path with the maximum sum. As we traverse all paths, we can keep track of the path with the maximum sum.

@@ -10,7 +10,7 @@ class TreeNode {
   }
 };
 
-class FindAllTreePaths {
+class AllPaths {
   public static List<List<Integer>> findPaths(TreeNode root, int sum) {
     List<List<Integer>> allPaths = new ArrayList<>();
     // TODO: Write your code here
@@ -28,7 +28,7 @@ class FindAllTreePaths {
 
       currentPath.add(currentNode.val);
 
-      if (currentNode.val == sum && currentNode.left == null && currentNode.right == null) {
+      if (currentNode.left == null && currentNode.right == null) {
         allPaths.add(new ArrayList<Integer>(currentPath));
       }
       else {
@@ -48,7 +48,7 @@ class FindAllTreePaths {
     root.right.left = new TreeNode(10);
     root.right.right = new TreeNode(5);
     int sum = 23;
-    List<List<Integer>> result = FindAllTreePaths.findPaths(root, sum);
-    System.out.println("Tree paths with sum " + sum + ": " + result);
+    List<List<Integer>> result = AllPaths.findPaths(root, sum);
+    System.out.println("All Tree paths: " + result);
   }
 }
