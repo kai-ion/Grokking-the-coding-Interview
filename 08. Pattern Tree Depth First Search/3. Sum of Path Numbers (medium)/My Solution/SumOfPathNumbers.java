@@ -13,7 +13,22 @@ class TreeNode {
 class SumOfPathNumbers {
   public static int findSumOfPathNumbers(TreeNode root) {
     // TODO: Write your code here
-    return -1;
+    return find_path_sum_recursive (root, 0);
+  }
+
+  private static int find_path_sum_recursive (TreeNode currentNode, int pathSum) {
+    if (currentNode == null) {
+      return 0;
+    }
+
+    pathSum = 10 * pathSum + currentNode.val;
+
+    if (currentNode.left == null && currentNode.right == null) {
+      return pathSum;
+    }
+
+
+    return find_path_sum_recursive(currentNode.left, pathSum) + find_path_sum_recursive(currentNode.right, pathSum);
   }
 
   public static void main(String[] args) {
