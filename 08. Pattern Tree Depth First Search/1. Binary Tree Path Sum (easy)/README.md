@@ -4,7 +4,7 @@ Given a binary tree and a number ‘S’, find if the tree has a path from root-
 
 ![alt text][logo]
 
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/07.%20Pattern%20Tree%20Breadth%20First%20Search/9.%20Right%20View%20of%20a%20Binary%20Tree%20(easy)/Example.PNG "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/1.%20Binary%20Tree%20Path%20Sum%20(easy)/Example.PNG "example"
 
 # Solution
 As we are trying to search for a root-to-leaf path, we can use the Depth First Search (DFS) technique to solve this problem.
