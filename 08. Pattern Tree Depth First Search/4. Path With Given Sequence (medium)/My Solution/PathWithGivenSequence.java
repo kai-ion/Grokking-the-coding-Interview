@@ -13,7 +13,28 @@ class TreeNode {
 class PathWithGivenSequence {
   public static boolean findPath(TreeNode root, int[] sequence) {
     // TODO: Write your code here
-    return false;
+    if (root == null) {
+      return false;
+    }
+
+    return findPathRecursive(root, sequence, 0);
+  }
+
+  private static boolean findPathRecursive(TreeNode currentNode, int[] sequence, int sequenceId) {
+    
+    if (currentNode == null) {
+      return false;
+    }
+
+    if (sequenceId >= sequence.length || currentNode.val != sequence[sequenceId]) {
+      return false;
+    }
+
+    if (sequence[sequenceId] == currentNode.val && currentNode.left == null && currentNode.right == null) {
+      return true;
+    }
+
+    return findPathRecursive(currentNode.left, sequence, sequenceId + 1) || findPathRecursive(currentNode.right, sequence, sequenceId + 1);
   }
   
   public static void main(String[] args) {
