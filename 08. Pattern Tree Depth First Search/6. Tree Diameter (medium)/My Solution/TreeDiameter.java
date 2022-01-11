@@ -10,10 +10,34 @@ class TreeNode {
 
 class TreeDiameter {
 
+  private static int maxTreeDiameter = 0;
+
   public static int findDiameter(TreeNode root) {
     // TODO: Write your code here
-    return -1;
+    calculate_Height(root);
+    return maxTreeDiameter;
   }
+
+  private static int calculate_Height (TreeNode currentNode) {
+
+    if (currentNode == null) {
+      return 0;
+    }
+
+    int leftHeight = calculate_Height(currentNode.left);
+
+    int rightHeight = calculate_Height(currentNode.right);
+
+    if (leftHeight != 0 && rightHeight != 0) {
+
+      int treeDiameter = leftHeight + rightHeight + 1;
+      
+      maxTreeDiameter = Math.max(treeDiameter, maxTreeDiameter);
+
+    }
+
+    return Math.max(leftHeight, rightHeight) + 1;
+  } 
 
   public static void main(String[] args) {
     TreeNode root = new TreeNode(1);
