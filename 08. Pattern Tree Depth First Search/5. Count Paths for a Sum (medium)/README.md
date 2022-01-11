@@ -3,7 +3,7 @@ Given a binary tree and a number ‘S’, find all paths in the tree such that t
 
 ![alt text][logo]
 
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/3.%20Sum%20of%20Path%20Numbers%20(medium)/Example.PNG "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/5.%20Count%20Paths%20for%20a%20Sum%20(medium)/Example.PNG "example"
 
 
 # Solution
