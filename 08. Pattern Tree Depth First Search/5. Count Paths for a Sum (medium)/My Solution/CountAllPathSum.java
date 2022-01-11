@@ -13,7 +13,37 @@ class TreeNode {
 class CountAllPathSum {
   public static int countPaths(TreeNode root, int S) {
     // TODO: Write your code here
-    return -1;
+    List<Integer> currentPath = new ArrayList<>();
+
+    return countPathsRecursive(root, S, currentPath);
+  }
+
+  private static int countPathsRecursive(TreeNode currentNode, int sum, List<Integer> currentPath) {
+    
+    if (currentNode == null) {
+      return 0;
+    }
+
+    int pathSum = 0;
+    int pathCount = 0;
+    currentPath.add(currentNode.val);
+
+    ListIterator<Integer> itr = currentPath.listIterator(currentPath.size()); 
+    while (itr.hasPrevious()) {
+      pathSum += itr.previous();
+
+      if (pathSum == sum) {
+        pathCount++;
+      }
+    }
+
+    pathCount += countPathsRecursive(currentNode.left, sum, currentPath);
+
+    pathCount += countPathsRecursive(currentNode.right, sum, currentPath);
+
+    currentPath.remove(currentPath.size() - 1);
+
+    return pathCount;
   }
   
   public static void main(String[] args) {
