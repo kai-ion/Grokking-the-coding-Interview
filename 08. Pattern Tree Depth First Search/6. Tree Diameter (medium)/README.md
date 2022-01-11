@@ -1,7 +1,15 @@
 # Tree Diameter (medium) 
 Given a binary tree, find the length of its diameter. The diameter of a tree is the number of nodes on the longest path between any two leaf nodes. The diameter of a tree may or may not pass through the root.
 
+![alt text][logo]
+
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/6.%20Tree%20Diameter%20(medium)/Example.PNG "example"
+
+
+
 Note: You can always assume that there are at least two leaf nodes in the given tree.
+
+
 
 # Solution 
 This problem follows the Binary Tree Path Sum pattern. We can follow the same DFS approach. There will be a few differences:
