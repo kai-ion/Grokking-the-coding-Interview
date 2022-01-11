@@ -34,33 +34,33 @@ Let’s take the Example-1 mentioned above to go through each step of our algori
      
 ![alt text][logo]
 
-[logo]: "example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/09.%20Pattern%20Two%20Heaps/1.%20Find%20the%20Median%20of%20a%20Number%20Stream%20(medium)/Example.PNG "example"
 
 2. `insertNum(1)`: As ‘1’ is smaller than ‘3’, let’s insert it into the **Max Heap**.
 
 ![alt text][logo2]
 
-[logo2]: "example"
+[logo2]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/09.%20Pattern%20Two%20Heaps/1.%20Find%20the%20Median%20of%20a%20Number%20Stream%20(medium)/Example2.PNG "example"
 
 Now, we have two elements in the **Max Heap** and no elements in **Min Heap**. Let’s take the largest element from the **Max Heap** and insert it into the **Min Heap**, to balance the number of elements in both heaps.
 
 ![alt text][logo3]
 
-[logo3]: "example"
+[logo3]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/09.%20Pattern%20Two%20Heaps/1.%20Find%20the%20Median%20of%20a%20Number%20Stream%20(medium)/Example3.PNG "example"
 
 3. `findMedian()`: As we have an even number of elements, the median will be the average of the top element of both the heaps -> (1+3)/2 = 2.0(1+3)/2=2.0
 4. `insertNum(5)`: As ‘5’ is greater than the top element of the **Max Heap**, we can insert it into the **Min Heap**. After the insertion, the total count of elements will be odd. As we had decided to have more numbers in the **Max Heap** than the **Min Heap**, we can take the top (smallest) number from the **Min Heap** and insert it into the **Max Heap**.
 
 ![alt text][logo4]
 
-[logo4]: "example"
+[logo4]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/09.%20Pattern%20Two%20Heaps/1.%20Find%20the%20Median%20of%20a%20Number%20Stream%20(medium)/Example4.PNG "example"
 
 5. `findMedian()`: Since we have an odd number of elements, the median will be the top element of **Max Heap** -> 3. An odd number of elements also means that the **Max Heap** will have one extra element than the **Min Heap**.
 6. `insertNum(4)`: Insert ‘4’ into **Min Heap**.
 
 ![alt text][logo5]
 
-[logo5]: "example"
+[logo5]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/09.%20Pattern%20Two%20Heaps/1.%20Find%20the%20Median%20of%20a%20Number%20Stream%20(medium)/Example5.PNG "example"
 
 7. `findMedian()`: As we have an even number of elements, the median will be the average of the top element of both the heaps -> (3+4)/2 = 3.5
 
