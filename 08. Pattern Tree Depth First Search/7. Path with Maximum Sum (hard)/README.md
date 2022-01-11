@@ -5,7 +5,7 @@ A path can be defined as a sequence of nodes between any two nodes and doesn’t
 
 ![alt text][logo]
 
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/6.%20Tree%20Diameter%20(medium)/Example.PNG "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/08.%20Pattern%20Tree%20Depth%20First%20Search/7.%20Path%20with%20Maximum%20Sum%20(hard)/Example.PNG "example"
 
 # Solution
 This problem follows the Binary Tree Path Sum pattern and shares the algorithmic logic with Tree Diameter. We can follow the same DFS approach. The only difference will be to ignore the paths with negative sums. 
