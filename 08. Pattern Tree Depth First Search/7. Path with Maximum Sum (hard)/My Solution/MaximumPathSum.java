@@ -10,9 +10,36 @@ class TreeNode {
 
 class MaximumPathSum {
 
+  private static int maxSumPath;
+  
   public static int findMaximumPathSum(TreeNode root) {
     // TODO: Write your code here
-    return -1;
+    maxSumPath = Integer.MIN_VALUE;
+
+    maxSumPath = Math.max(findMaximumPathSumRecursive(root), maxSumPath);
+
+    return maxSumPath;
+  }
+
+  private static int findMaximumPathSumRecursive(TreeNode currentNode) {
+
+    if (currentNode == null) {
+      return 0;
+    }
+
+    int leftPathSum = findMaximumPathSumRecursive(currentNode.left);
+    int rightPathSum = findMaximumPathSumRecursive(currentNode.right);
+
+    leftPathSum = Math.max(leftPathSum, 0);
+    rightPathSum = Math.max(rightPathSum, 0);
+    
+
+    int pathSum = leftPathSum + rightPathSum + currentNode.val;
+
+    maxSumPath = Math.max(pathSum, maxSumPath);
+    
+
+    return Math.max(leftPathSum, rightPathSum) + currentNode.val;
   }
 
   public static void main(String[] args) {
