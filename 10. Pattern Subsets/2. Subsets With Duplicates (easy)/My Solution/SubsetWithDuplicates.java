@@ -21,7 +21,7 @@ class SubsetWithDuplicates {
 
       end = subsets.size();
 
-      for (int j = start; j < end; j++) {
+      for (int j = start; j < end; j++) {           
         ArrayList<Integer> set = new ArrayList<>(subsets.get(j));
         set.add(nums[i]);
 
