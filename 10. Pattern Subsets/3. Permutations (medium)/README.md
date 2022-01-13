@@ -39,7 +39,7 @@ If we look closely, we will realize that when we add a new number (5), we take e
 
 ![alt text][logo]
 
-[logo]:  "example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/3.%20Permutations%20(medium)/Example.PNG "example"
 
 # Time complexity
 We know that there are a total of N!N! permutations of a set with ‘N’ numbers. In the algorithm above, we are iterating through all of these permutations with the help of the two ‘for’ loops. In each iteration, we go through all the current permutations to insert a new number in them on line 17 (line 23 for C++ solution). To insert a number into a permutation of size ‘N’ will take O(N), which makes the overall time complexity of our algorithm O(N*N!).
