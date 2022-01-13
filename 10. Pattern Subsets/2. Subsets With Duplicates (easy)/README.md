@@ -47,7 +47,7 @@ To handle this instead of adding (3) to all the existing subsets, we only add it
 
 ![alt text][logo]
 
-[logo]:  "example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/2.%20Subsets%20With%20Duplicates%20(easy)/Example.PNG "example"
 
 # Time complexity
 Since, in each step, the number of subsets doubles (if not duplicate) as we add each element to all the existing subsets, therefore, we will have a total of O(2^N) subsets, where ‘N’ is the total number of elements in the input set. And since we construct a new subset from an existing set, therefore, the time complexity of the above algorithm will be O(N*2^N).
