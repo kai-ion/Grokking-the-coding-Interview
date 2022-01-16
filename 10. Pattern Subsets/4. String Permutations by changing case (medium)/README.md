@@ -32,7 +32,7 @@ If we look closely, we will realize that in the 5th step, when we processed the 
 
 ![alt text][logo]
 
-[logo]:  "example"
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/4.%20String%20Permutations%20by%20changing%20case%20(medium)/Example.PNG  "example"
 
 # Time complexity
 Since we can have 2^N permutations at the most and while processing each permutation we convert it into a character array, the overall time complexity of the algorithm will be O(N*2^N).
