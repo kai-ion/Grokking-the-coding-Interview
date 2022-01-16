@@ -39,6 +39,8 @@ Following this guideline, let’s generate parentheses for N=3:
 
 ![alt text][logo]
 
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/5.%20Balanced%20Parentheses%20(hard)/Example.PNG "example"
+
 # Time complexity
 Let’s try to estimate how many combinations we can have for ‘N’ pairs of balanced parentheses. If we don’t care for the ordering - that ) can only come after ( - then we have two options for every position, i.e., either put open parentheses or close parentheses. This means we can have a maximum of 2^N combinations. Because of the ordering, the actual number will be less than 2^N.
 
