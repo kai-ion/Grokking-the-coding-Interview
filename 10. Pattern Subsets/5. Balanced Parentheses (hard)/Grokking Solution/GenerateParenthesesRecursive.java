@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 class GenerateParenthesesRecursive {
 
   public static List<String> generateValidParentheses(int num) {
