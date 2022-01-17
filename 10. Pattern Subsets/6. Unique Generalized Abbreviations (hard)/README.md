@@ -20,6 +20,12 @@ Output: "code", "cod1", "co1e", "co2", "c1de", "c1d1", "c2e", "c3", "1ode", "1od
 "2de", "2d1", "3e", "4"
 ```
 
+![alt text][logo]
+
+[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/6.%20Unique%20Generalized%20Abbreviations%20(hard)/Example.PNG "example"
+
+
+
 # Solution
 This problem follows the Subsets pattern and can be mapped to Balanced Parentheses. We can follow a similar BFS approach.
 
