@@ -10,8 +10,13 @@ class TreeNode {
   }
 };
 
-class CountUniqueTrees {
+class CountUniqueTreesMap {
+  Map<Integer, Integer> map = new HashMap<>();
+
   public int countTrees(int n) {
+    if (map.containsKey(n))
+      return map.get(n);
+
     if (n <= 1)
       return 1;
     int count = 0;
@@ -21,11 +26,12 @@ class CountUniqueTrees {
       int countOfRightSubtrees = countTrees(n - i);
       count += (countOfLeftSubtrees * countOfRightSubtrees);
     }
+    map.put(n, count);
     return count;
   }
 
   public static void main(String[] args) {
-    CountUniqueTrees ct = new CountUniqueTrees();
+    CountUniqueTreesMap ct = new CountUniqueTreesMap();
     int count = ct.countTrees(3);
     System.out.print("Total trees: " + count);
   }

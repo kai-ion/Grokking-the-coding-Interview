@@ -13,7 +13,17 @@ class TreeNode {
 class CountUniqueTrees {
   public int countTrees(int n) {
     // TODO: Write your code here
-    return -1;
+    if (n <= 1) {
+      return 1;
+    }
+
+    int count = 0;
+    for (int i = 1; i <= n; i++) {
+      int left = countTrees(i - 1);
+      int right = countTrees(n - i);
+      count += (left * right);
+    }
+    return count;
   }
   
   public static void main(String[] args) {

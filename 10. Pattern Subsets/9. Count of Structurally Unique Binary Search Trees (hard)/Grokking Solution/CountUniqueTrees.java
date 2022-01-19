@@ -11,12 +11,7 @@ class TreeNode {
 };
 
 class CountUniqueTrees {
-  Map<Integer, Integer> map = new HashMap<>();
-
   public int countTrees(int n) {
-    if (map.containsKey(n))
-      return map.get(n);
-
     if (n <= 1)
       return 1;
     int count = 0;
@@ -26,7 +21,6 @@ class CountUniqueTrees {
       int countOfRightSubtrees = countTrees(n - i);
       count += (countOfLeftSubtrees * countOfRightSubtrees);
     }
-    map.put(n, count);
     return count;
   }
 
