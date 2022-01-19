@@ -20,12 +20,6 @@ Output: "code", "cod1", "co1e", "co2", "c1de", "c1d1", "c2e", "c3", "1ode", "1od
 "2de", "2d1", "3e", "4"
 ```
 
-![alt text][logo]
-
-[logo]:https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/6.%20Unique%20Generalized%20Abbreviations%20(hard)/Example.PNG "example"
-
-
-
 # Solution
 This problem follows the Subsets pattern and can be mapped to Balanced Parentheses. We can follow a similar BFS approach.
 
@@ -41,6 +35,10 @@ Following these two rules, let’s abbreviate `BAT`:
 4. In the next iteration, let’s add the second character. Applying the two rules on `_` will give us `_ _` and `1A`. Applying the above rules to the other combination `B` gives us `B_` and `BA`.
 5. The next iteration will give us: `_ _ _`, `2T`, `1A_`, `1AT`, `B _ _`, `B1T`, `BA_`, `BAT`
 6. The final iteration will give us:`3`, `2T`, `1A1`, `1AT`, `B2`, `B1T`, `BA1`, `BAT`
+
+![alt text][logo]
+
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/6.%20Unique%20Generalized%20Abbreviations%20(hard)/Example.PNG "Example"
 
 # Time complexity
 Since we had two options for each character, we will have a maximum of 2^N combinations. If you see the visual representation of Example-1 closely, you will realize that it is equivalent to a binary tree, where each node has two children. This means that we will have 2^N leaf nodes and 2^N-1 intermediate nodes, so the total number of elements pushed to the queue will be 2^N + 2^N-1, which is asymptotically equivalent to O(2^N). While processing each element, we do need to concatenate the current string with a character. This operation will take O(N), so the overall time complexity of our algorithm will be O(N*2^N).
