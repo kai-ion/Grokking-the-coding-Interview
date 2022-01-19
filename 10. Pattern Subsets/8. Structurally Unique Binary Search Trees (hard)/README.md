@@ -11,7 +11,7 @@ Explanation: Here are the 2 structurally unique BSTs storing all numbers from 1 
 ```
 ![alt text][logo]
 
-[logo]:  "Example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/8.%20Structurally%20Unique%20Binary%20Search%20Trees%20(hard)/Example1.PNG "Example"
 
 #### Example 2:
 ```
@@ -23,7 +23,7 @@ Explanation: Here are the 5 structurally unique BSTs storing all numbers from 1 
 ```
 ![alt text][logo2]
 
-[logo2]:  "Example"
+[logo2]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/10.%20Pattern%20Subsets/8.%20Structurally%20Unique%20Binary%20Search%20Trees%20(hard)/Example2.PNG "Example"
 
 # Solution 
 This problem follows the Subsets pattern and is quite similar to Evaluate Expression. Following a similar approach, we can iterate from 1 to ‘n’ and consider each number as the root of a tree. All smaller numbers will make up the left sub-tree and bigger numbers will make up the right sub-tree. We will make recursive calls for the left and right sub-trees
