@@ -38,7 +38,7 @@ We can use a similar approach as discussed in Order-agnostic Binary Search. We w
 
 ![alt text][logo]
 
-[logo]: "example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/11.%20Pattern%20Modified%20Binary%20Search/2.%20Ceiling%20of%20a%20Number%20(medium)/Example.PNG "example"
 
 Since we are always adjusting our range to find the ‘key’, when we exit the loop, the start of our range will point to the smallest number greater than the ‘key’ as shown in the above picture.
 
