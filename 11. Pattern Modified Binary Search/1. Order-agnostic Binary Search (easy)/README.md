@@ -48,7 +48,7 @@ To make things simple, let’s first solve this problem assuming that the input 
 
 ![alt text][logo]
 
-[logo]: "example"
+[logo]: https://github.com/kai-ion/Grokking-the-coding-Interview/blob/main/11.%20Pattern%20Modified%20Binary%20Search/1.%20Order-agnostic%20Binary%20Search%20(easy)/Example.PNG "example"
 
 If the array is sorted in the descending order, we have to update the step 4 above as:
 
