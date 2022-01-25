@@ -2,7 +2,20 @@ class MaxInBitonicArray {
 
   public static int findMax(int[] arr) {
     // TODO: Write your code here
-    return -1;
+    int start = 0;
+    int end = arr.length;
+
+    while (start <= end) {
+      int mid = start + (end - start)/2;
+
+      if (arr[mid] < arr[mid+1]) {
+        start = mid + 1;
+      } else if (arr[mid] > arr[mid+1]) {
+        end = mid;
+      }
+
+    }
+    return arr[start];
   }
 
   public static void main(String[] args) {
