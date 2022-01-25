@@ -2,7 +2,34 @@ class MinimumDifference {
 
   public static int searchMinDiffElement(int[] arr, int key) {
     // TODO: Write your code here
-    return -1;
+    if (arr[0] >= key) {
+      return arr[0];
+    }
+
+    if (arr[arr.length - 1] <= key) {
+      return arr[arr.length - 1];
+    }
+
+    int start = 0;
+    int end = arr.length;
+
+    while (start <= end) {
+      int mid = start + (end - start)/2;
+
+      if (arr[mid] < key) {
+        start = mid + 1;
+      } else if (arr[mid] > key) {
+        end = mid - 1;
+      } else {
+        return arr[mid];
+      }
+    }
+
+    if ((arr[start] - key) < (arr[end] - key)) {
+      return arr[start];
+    } 
+    return arr[end];
+
   }
 
   public static void main(String[] args) {
