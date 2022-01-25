@@ -16,6 +16,32 @@ class SearchInfiniteSortedArray {
 
   public static int search(ArrayReader reader, int key) {
     // TODO: Write your code here
+    int start = 0; 
+    int end = 1;
+
+    while (key > reader.get(end))  {
+      int newStart = end + 1;
+      end = (end - start + 1) * 2;
+      start = newStart;
+    }
+
+    return binary_Search(reader, start, end, key);
+  }
+
+  private static int binary_Search (ArrayReader reader, int start, int end, int key) {
+
+    while (start <= end) {
+      int mid = start + (end - start)/2;
+
+      if (reader.get(mid) > key) {
+        end = mid - 1;
+      } else if (reader.get(mid) < key) {
+        start = mid + 1;
+      } else {
+        return mid;
+      }
+    }
+
     return -1;
   }
 
